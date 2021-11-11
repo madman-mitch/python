@@ -1,0 +1,27 @@
+def turun(b,a,x):
+    if(x<=a):
+        nilai = 1
+    elif(x>a and x<b):
+        nilai = (b-x)/(b-a)
+    elif(x>=b):
+        nilai = 0
+
+    return nilai
+    
+def naik(b,a,x):
+    if(x<=a):
+        nilai = 0
+    elif(x>a and x<b):
+        nilai = (x-a)/(b-a)
+    elif(x>=b):
+        nilai = 1
+
+    return nilai
+    
+def penurunan(b,a,al):
+    nilai = b - (al*(b-a))
+    return nilai
+    
+def penaikan(b,a,al):
+    nilai = al*(b-a) + a
+    return nilai
